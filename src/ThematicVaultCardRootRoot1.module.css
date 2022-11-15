@@ -1,0 +1,327 @@
+.thematicVaultCardRootRootRoot {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  background-color: #1e2220;
+}
+.vaultHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.vaultHeaderImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 12px 30px 11px 381px;
+  background-size: cover;
+  background-image: url("https://file.rendit.io/n/gya06LZVjdqWzmI5lp8A.png");
+}
+.priceAction {
+  height: 42px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5px 0px 10px 0px;
+  border-radius: 6px;
+  background-color: #252927;
+}
+.text1 {
+  width: 107px;
+  height: 13.5px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.38);
+  font-size: 6px;
+  font-family: Rubik;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.text2 {
+  width: 107px;
+  height: 13.5px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 8px;
+  font-family: Rubik;
+  line-height: 27px;
+  text-align: center;
+}
+.lineChartJeanWhite {
+  width: 54.5px;
+  height: 16.5px;
+  align-self: center;
+}
+.vaultDetails {
+  gap: 10px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 30px;
+}
+.titleRow {
+  height: 46.3px;
+  gap: 20px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+}
+.text3 {
+  width: 219px;
+  height: 46.3px;
+  gap: 10px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Rubik;
+  line-height: 36px;
+  text-align: center;
+  white-space: nowrap;
+}
+.tradeButton {
+  width: 215px;
+  height: 38.3px;
+  gap: 10px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-width: 0px;
+  border-radius: 10px;
+  border-top-width: 2px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 2px;
+  border-style: solid;
+  border-color: #ffffff;
+  box-sizing: content-box;
+  background-color: transparent;
+  background-image: linear-gradient(
+    94deg,
+    #00c864 0%,
+    rgba(12, 149, 81, 0.5) 176%
+  );
+  cursor: pointer;
+}
+.tradeButton:hover {
+  opacity: 70%;
+}
+.text4 {
+  width: 348px;
+  height: 34.3px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: Rubik;
+  line-height: 27px;
+  text-align: center;
+}
+.middleRow {
+  height: 46.3px;
+  gap: 10px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.emissionsRecuction {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.blackFlexRow {
+  height: 23.2px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #252927;
+}
+.text5 {
+  width: 224px;
+  height: 23.2px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.38);
+  font-size: 7px;
+  font-family: Rubik;
+  line-height: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.blackFlexRow1 {
+  height: 23.2px;
+  gap: 10px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #252927;
+}
+.text6 {
+  width: 224px;
+  height: 23.2px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  font-family: Rubik;
+  line-height: 27px;
+  text-align: center;
+}
+.sdGs {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2px 0px;
+  background-color: #252927;
+}
+.flexRow {
+  height: 13.2px;
+  gap: 10px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  padding: 4px 0px;
+}
+.text7 {
+  width: 224px;
+  height: 13.2px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.38);
+  font-size: 7px;
+  font-family: Rubik;
+  line-height: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.sdgIcons {
+  width: 224px;
+  height: 21.2px;
+  gap: 5px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.bottomRow {
+  height: 46.3px;
+  gap: 10px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+}
+.text8 {
+  width: 107px;
+  height: 23.2px;
+  gap: 10px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.38);
+  font-size: 7px;
+  font-family: Rubik;
+  line-height: 10px;
+  text-align: center;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+.flexColumn {
+  height: 23.2px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.text9 {
+  width: 107px;
+  height: 23.2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12px;
+  font-family: Rubik;
+  line-height: 27px;
+  text-align: center;
+}
+.blackFlexColumn1 {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #252927;
+}
+.text13 {
+  width: 107px;
+  height: 23.2px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00c864;
+  font-size: 7px;
+  font-family: Rubik;
+  line-height: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.text14 {
+  width: 107px;
+  height: 23.2px;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00c864;
+  font-size: 12px;
+  font-family: Rubik;
+  line-height: 27px;
+  text-align: center;
+}
