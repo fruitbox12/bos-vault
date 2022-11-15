@@ -22,9 +22,9 @@ export const ThematicVaultCardRootRoot1 = ({
       </VaultHeader>
       <VaultDetails>
         <TitleRow>
-          <Text3>{name}</Text3>
+          <VaultNameText>{name}</VaultNameText>
           <TradeButton onClick={(e) => TradeButtonFunction(e, "TradeButton")}>
-            <Text4>Trade</Text4>
+            <TradeText>Trade</TradeText>
           </TradeButton>
         </TitleRow>
         <MiddleRow>
@@ -38,7 +38,7 @@ export const ThematicVaultCardRootRoot1 = ({
           </EmissionsRecuction>
           <SDGs>
             <FlexRow>
-              <Text7>Sustainable Development Goals</Text7>
+              <Label>Sustainable Development Goals</Label>
             </FlexRow>
             <SDGIcons>
               {[
@@ -77,7 +77,7 @@ export const ThematicVaultCardRootRoot1 = ({
           </BlackFlexColumn>
           <BlackFlexColumn>
             <GreenLabel>Rating</GreenLabel>
-            <Text14>{rating}</Text14>
+            <GreenData>{rating}</GreenData>
           </BlackFlexColumn>
         </BottomRow>
       </VaultDetails>
@@ -95,35 +95,6 @@ const BlackFlexColumn = styled.div`
   flex-direction: column;
   justify-content: center;
   background-color: #252927;
-`;
-const Text10 = styled.div`
-  width: 107px;
-  height: 23.2px;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.38);
-  font-size: 7px;
-  font-family: Rubik;
-  line-height: 10px;
-  text-align: center;
-  text-transform: uppercase;
-`;
-const Text11 = styled.div`
-  width: 107px;
-  height: 23.2px;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 12px;
-  font-family: Rubik;
-  line-height: 27px;
-  text-align: center;
 `;
 const ThematicVaultCardRootRootRoot = styled.div`
   display: flex;
@@ -205,7 +176,7 @@ const TitleRow = styled.div`
   flex-direction: row;
   justify-content: center;
 `;
-const Text3 = styled.div`
+const VaultNameText = styled.div`
   width: 219px;
   height: 46.3px;
   gap: 10px;
@@ -254,7 +225,7 @@ const TradeButton = styled.button`
     box-shadow: inset 0 0 100px 100px rgba(255, 255, 255, 0.3);
   } ;
 `;
-const Text4 = styled.div`
+const TradeText = styled.div`
   width: 348px;
   height: 34.3px;
   display: flex;
@@ -291,21 +262,6 @@ const BlackFlexRow = styled.div`
   justify-content: center;
   background-color: #252927;
 `;
-const Text5 = styled.div`
-  width: 224px;
-  height: 23.2px;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.38);
-  font-size: 7px;
-  font-family: Rubik;
-  line-height: 10px;
-  text-align: center;
-  text-transform: uppercase;
-`;
 const BlackFlexRow1 = styled.div`
   height: 23.2px;
   gap: 10px;
@@ -314,20 +270,6 @@ const BlackFlexRow1 = styled.div`
   flex-direction: row;
   justify-content: center;
   background-color: #252927;
-`;
-const Text6 = styled.div`
-  width: 224px;
-  height: 23.2px;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 12px;
-  font-family: Rubik;
-  line-height: 27px;
-  text-align: center;
 `;
 const SDGs = styled.div`
   display: flex;
@@ -345,21 +287,6 @@ const FlexRow = styled.div`
   flex-direction: row;
   justify-content: center;
   padding: 4px 0px;
-`;
-const Text7 = styled.div`
-  width: 224px;
-  height: 13.2px;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.38);
-  font-size: 7px;
-  font-family: Rubik;
-  line-height: 10px;
-  text-align: center;
-  text-transform: uppercase;
 `;
 const SDGIcons = styled.div`
   width: 224px;
@@ -379,42 +306,12 @@ const BottomRow = styled.div`
   flex-direction: row;
   justify-content: center;
 `;
-const Text8 = styled.div`
-  width: 107px;
-  height: 23.2px;
-  gap: 10px;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.38);
-  font-size: 7px;
-  font-family: Rubik;
-  line-height: 10px;
-  text-align: center;
-  white-space: nowrap;
-  text-transform: uppercase;
-`;
 const FlexColumn = styled.div`
   height: 23.2px;
   display: flex;
   flex-grow: 1;
   flex-direction: column;
   justify-content: center;
-`;
-const Text9 = styled.div`
-  width: 107px;
-  height: 23.2px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: rgba(255, 255, 255, 0.72);
-  font-size: 12px;
-  font-family: Rubik;
-  line-height: 27px;
-  text-align: center;
 `;
 const BlackFlexColumn1 = styled.div`
   display: flex;
@@ -438,7 +335,7 @@ const GreenLabel = styled.div`
   text-align: center;
   text-transform: uppercase;
 `;
-const Text14 = styled.div`
+const GreenData = styled.div`
   width: 107px;
   height: 23.2px;
   display: flex;
