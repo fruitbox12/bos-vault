@@ -1,7 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 
-export const ThematicVaultCardRootRoot1 = ({}) => {
+export const ThematicVaultCardRootRoot1 = ({
+  name, price, aer, sdgs, region, numProjects, walletBalance, rating
+}) => {
   const TradeButtonFunction = (e, name) => {
     alert(`${name} was clicked`);
   };
@@ -10,8 +12,8 @@ export const ThematicVaultCardRootRoot1 = ({}) => {
       <VaultHeader>
         <VaultHeaderImage>
           <PriceAction>
-            <Text1>Price per ton</Text1>
-            <Text2>$18.26</Text2>
+            <Label>Price per ton</Label>
+            <DataText>{price}</DataText>
             <LineChartJeanWhite
               src={`https://file.rendit.io/n/tnbbPSwpyOGWbTy1gb7K.svg`}
             />
@@ -20,7 +22,7 @@ export const ThematicVaultCardRootRoot1 = ({}) => {
       </VaultHeader>
       <VaultDetails>
         <TitleRow>
-          <Text3>Kelp Thematic Vault</Text3>
+          <Text3>{name}</Text3>
           <TradeButton onClick={(e) => TradeButtonFunction(e, "TradeButton")}>
             <Text4>Trade</Text4>
           </TradeButton>
@@ -28,10 +30,10 @@ export const ThematicVaultCardRootRoot1 = ({}) => {
         <MiddleRow>
           <EmissionsRecuction>
             <BlackFlexRow>
-              <Text5>Annual Emission Reductions</Text5>
+              <Label>Annual Emission Reductions</Label>
             </BlackFlexRow>
             <BlackFlexRow1>
-              <Text6>250,500 t/yr</Text6>
+              <DataText>{aer}</DataText>
             </BlackFlexRow1>
           </EmissionsRecuction>
           <SDGs>
@@ -60,22 +62,22 @@ export const ThematicVaultCardRootRoot1 = ({}) => {
         </MiddleRow>
         <BottomRow>
           <BlackFlexColumn>
-            <Text8>Region</Text8>
+            <Label>Region</Label>
             <FlexColumn>
-              <Text9>Africa</Text9>
+              <DataText>{region}</DataText>
             </FlexColumn>
           </BlackFlexColumn>
           <BlackFlexColumn1>
-            <Text10># Projects</Text10>
-            <Text11>6</Text11>
+            <Label># Projects</Label>
+            <DataText>{numProjects}</DataText>
           </BlackFlexColumn1>
           <BlackFlexColumn>
-            <Text10>My Wallet</Text10>
-            <Text11>400 </Text11>
+            <Label>My Wallet</Label>
+            <DataText>{walletBalance} </DataText>
           </BlackFlexColumn>
           <BlackFlexColumn>
-            <Text13>Rating</Text13>
-            <Text14>AAA</Text14>
+            <GreenLabel>Rating</GreenLabel>
+            <Text14>{rating}</Text14>
           </BlackFlexColumn>
         </BottomRow>
       </VaultDetails>
@@ -152,7 +154,7 @@ const PriceAction = styled.div`
   border-radius: 6px;
   background-color: #252927;
 `;
-const Text1 = styled.div`
+const Label = styled.div`
   width: 107px;
   height: 13.5px;
   display: flex;
@@ -168,7 +170,7 @@ const Text1 = styled.div`
   letter-spacing: 1px;
   text-transform: uppercase;
 `;
-const Text2 = styled.div`
+const DataText = styled.div`
   width: 107px;
   height: 13.5px;
   display: flex;
@@ -421,7 +423,7 @@ const BlackFlexColumn1 = styled.div`
   justify-content: flex-start;
   background-color: #252927;
 `;
-const Text13 = styled.div`
+const GreenLabel = styled.div`
   width: 107px;
   height: 23.2px;
   display: flex;
